@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #bedfe8;
+}
+.accordion__list {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  background: #2694af;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.accordion__list::after {
+  content: "+";
+  position: absolute;
+  right: 5%;
+  font-size: 20px;
+}
+.accordion {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.accordion__title {
+  text-align: center;
+  font-size: 20px;
+}
+.contentBox {
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+.accordion .contentBox .content {
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  padding-left: 10px;
+  height: 0;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+.accordion .active .content {
+  height: 150px;
+}

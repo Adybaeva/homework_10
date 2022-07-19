@@ -22,6 +22,9 @@ body {
   right: 5%;
   font-size: 20px;
 }
+.active .accordion__list::after {
+  content: "-";
+}
 .accordion {
   max-width: 700px;
   margin: 0 auto;

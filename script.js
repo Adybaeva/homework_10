@@ -5,9 +5,3 @@ for (let i = 0; i < accordion.length; i++) {
     this.classList.toggle("active");
   });
 }
-
-// accordion.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     this.classList.toggle("active");
-//   });
-// });
